@@ -99,12 +99,15 @@ function getDirection(lastPrice, indexPrice) {
 /**
  * Форматує ENTRY повідомлення
  */
+/**
+ * Форматує ENTRY повідомлення
+ */
 function formatEntryMessage(symbol, direction, lastPrice, indexPrice, spread) {
   return `📊 SPREAD SIGNAL
 SYMBOL: ${symbol}
 DIRECTION: ${direction}
-LAST_PRICE: ${lastPrice.toFixed(2)}
-INDEX_PRICE: ${indexPrice.toFixed(2)}
+LAST_PRICE: ${lastPrice} 
+INDEX_PRICE: ${indexPrice}
 SPREAD: ${spread.toFixed(2)}%
 TIME: ${new Date().toISOString()}`;
 }
@@ -116,8 +119,8 @@ function formatExitMessage(symbol, direction, lastPrice, indexPrice, spread) {
   return `✅ SPREAD CLOSED
 SYMBOL: ${symbol}
 DIRECTION: ${direction}
-LAST_PRICE: ${lastPrice.toFixed(2)}
-INDEX_PRICE: ${indexPrice.toFixed(2)}
+LAST_PRICE: ${lastPrice}
+INDEX_PRICE: ${indexPrice}
 SPREAD: ${spread.toFixed(2)}%
 TIME: ${new Date().toISOString()}`;
 }
