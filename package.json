@@ -1,0 +1,25 @@
+{
+  "name": "bybit-spread-monitor",
+  "version": "1.0.0",
+  "description": "Bybit spread monitoring bot that detects and alerts on price discrepancies",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "bybit",
+    "spread",
+    "monitoring",
+    "trading",
+    "telegram"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ws": "^8.16.0",
+    "axios": "^1.7.7",
+    "dotenv": "^16.4.5",
+    "node-telegram-bot-api": "^0.66.0"
+  }
+}
